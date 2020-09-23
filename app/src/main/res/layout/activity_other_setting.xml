@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OtherSetting">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:title="Support"
+        app:popupTheme="@style/MyMaterialTheme"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:titleTextColor="@color/liteOrange"
+        android:background="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/lLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How GoRefer Works"
+            android:padding="16dp"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:textColor="@color/liteOrange"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FAQs"
+            android:padding="16dp"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:textColor="@color/liteOrange"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Term &amp; Conditions"
+            android:padding="16dp"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:textColor="@color/liteOrange"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:padding="16dp"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:textColor="@color/liteOrange"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/conUsBtn"
+        android:background="@drawable/custom_btn"
+        android:layout_below="@+id/lLayout"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conUsBtn"
+        android:layout_marginTop="40dp"
+        android:theme="@style/RatingBar"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

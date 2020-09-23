@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/profile_ic"
+            android:id="@+id/proPic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/proPic"
+            android:id="@+id/tvName"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_below="@id/tvName"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/proPic"
+            android:id="@+id/jobTv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_below="@id/jobTv"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/proPic"
+            android:id="@+id/locationTv"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:layout_below="@id/locationTv"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/proPic"
+            android:id="@+id/descTv"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_comment24"
+            android:layout_below="@id/descTv"
+            android:layout_toRightOf="@id/proPic"
+            android:id="@+id/comImg"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Comment"
+            android:layout_below="@id/descTv"
+            android:layout_toRightOf="@+id/comImg"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            android:layout_alignParentRight="true"
+            android:id="@+id/menuImg"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:01 am"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/menuImg"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
